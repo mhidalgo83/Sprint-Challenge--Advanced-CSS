@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    The biggest difference is the use of hardcoded layout widths in an adaptive site, versus the use of responsive units (rems, ems, percentages) in a responsive layout. Responsive sites take longer to build, as they accomodate many more devices than the hardcoded widths of adaptive sites. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first sites are designed with most users expected to visit the site more on their phone than on a desktop. With that in mind, the designer starts the design of the site with mobile in mind first. When utilizing media queries,mobile sites use `min-width` in their media queries. Desktop first is the opposite, with the design made with users visiting the site more on desktop than mobile devices. When utilizing media queries, the developer will use `max-width` in their media queries.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    This lets the developer use `rem` units based off the root element of the page (in this case, the `html` element) that are easily calculated. `62.5%` = 10px, so it easy to make calculations on the fly.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    A preprocessor allows the developer to write more readable code, allows less code to be written due to nesting of elements inside parent elements, and allows for variables and mixins to be used. Variables and mixins are very important, as you can make a single change in the variable or mixin, but the change can effect multiple properties that the variable or mixin is assigned to. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    I really like variables and mixins. They require the developer to have a plan in regards to how they code the website,and if there are any errors the future, those errors are easy to correct, instead of going to through the entire CSS document, trying to change each piece of code that is already written. The concept that gives me most trouble is parametric mixins, but I think I am getting the hang of it.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
