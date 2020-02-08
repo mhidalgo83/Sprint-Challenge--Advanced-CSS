@@ -59,6 +59,11 @@
 
       .btn {
         .btn-styles(@river-bend, @sea-shell);
+        transition: all .4s;
+
+        &:hover {
+          .btn-styles(@sea-shell, @river-bend);
+        }
       }
     }
 
