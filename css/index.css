@@ -136,6 +136,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
+  position: relative;
 }
 h1,
 h2,
@@ -165,12 +166,16 @@ p {
 }
 nav {
   text-align: center;
+  margin: 2% auto;
 }
 nav .nav-links {
   display: flex;
   justify-content: space-between;
   width: 50%;
   margin: 2% auto;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 @media only screen and (max-width: 500px) {
   nav .nav-links {
@@ -202,6 +207,7 @@ footer {
 .home .intro img {
   border-radius: 5px;
   width: 100%;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
 }
 .home .space-images {
   display: flex;
@@ -219,6 +225,7 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 500px) {
   .home .space-images img {
@@ -272,6 +279,7 @@ footer {
   border-radius: 5px;
   padding: 2% 0;
   cursor: pointer;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.4s;
 }
 @media only screen and (max-width: 500px) {
@@ -290,6 +298,7 @@ footer {
   border-radius: 5px;
   padding: 2% 0;
   cursor: pointer;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 500px) {
   .home .walk .walk-text .btn:hover {
@@ -311,4 +320,5 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
 }
